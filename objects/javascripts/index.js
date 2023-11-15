@@ -33,7 +33,3 @@ const profileExpertinEL = document.querySelector(".profile-expertin");
 profileNameEL.textContent = profile.name;
 profileAgeEL.textContent = profile.dob();
 profileExpertinEL.textContent = profile.profession();
-
-console.log("profile : ", profile);
-
-export default profile;

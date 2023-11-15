@@ -27,19 +27,25 @@ const guessProfession = {
 };
 
 // mergeing two {}
-// target means -> main {} + source means secondary {} [] "" expect 132468
+// target means -> main {} + source means secondary {object} [array] "string" expect 132468 numbers
 // here profile{} is main + guessprofession{} secondary
 
 Object.assign(profile, guessProfession);
 // let check the profession is added or not by log
 // console.log(profile);
 
-// while assigning "" it took the largest string lenght and placing indidual alphabet or string to an array
+// while assigning "string" it took the largest string lenght and placing indidual alphabet or string to an array
 // if we assign another string it over write the previous arr
+// { object } + "string"
 Object.assign(profile, "HTML");
 Object.assign(profile, "JS");
 
-Object.assign(profile, { arr: ["Good morning", "Good night", "Good evening"] });
+// { object } + [ array ]
+const greetings = ["Good morning", "Good night", "Good evening"];
+
+Object.assign(profile, greetings);
+
+// {object} + {object}
 Object.assign(profile, { greet: "HI" });
 
 console.log("methodMergeing file :", profile.profession());

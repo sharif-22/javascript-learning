@@ -17,9 +17,9 @@ const profile = {
 };
 
 // acessing profile object property
-// console.log(profile.name);
-
+console.log(profile.name);
 // acessing profile object methods
 // console.log(profile.dob());
+console.log("profile file : ", profile);
 
 export default profile;

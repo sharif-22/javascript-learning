@@ -46,6 +46,6 @@ MIT
 
 ## concepts to cover
 
-- [] CRUD
+- [ ] CRUD
 - [x] Clone
 - [x] Mergeing {}, [] , ""

@@ -8,8 +8,9 @@ isArray(fruitsObject);
 // Method 1
 
 // checking the types of fruitsObject
-let isArray = Array.isArray(fruitsObject);
-console.log(`Checking the fruits array isArray ? ${isArray}`);
+console.log(
+  `Checking the fruits array isArray ? ${Array.isArray(fruitsObject)}`
+);
 
 // -------------------------[ Array ]------------------
 let fruitsArray = ["Apple", "Pine apple", "Grapes", "Orange"];
@@ -19,8 +20,10 @@ isArray(fruitsArray);
 // Method 1
 
 // checking the types of fruitsArray
-let isArray = Array.isArray(fruitsArray);
-console.log(`Checking the fruits array isArray ? ${isArray}`);
+
+console.log(
+  `Checking the fruits array isArray ? ${Array.isArray(fruitsArray)}`
+);
 
 // method 2 - custum function
 function isArray(dataType) {
